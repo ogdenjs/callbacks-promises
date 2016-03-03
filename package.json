@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "example repo for presentation on 3/3/16",
   "license": "MIT",
-  "scripts": {
-    "babel": "babel-node"
-  },
   "dependencies": {
     "fs-promise": "0.4.1"
   },
