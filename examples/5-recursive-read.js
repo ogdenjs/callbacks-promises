@@ -7,7 +7,7 @@ import path from 'path'
 
 recursiveRead(path.resolve(__dirname, '..'))
 
-async function recursiveRead (dir) {
+async function recursiveRead(dir) {
   try {
     let files = await fs.readdir(dir)
     if (!files) return

@@ -2,22 +2,22 @@
 // read the project file structure with callbacks
 // -----------------------------------------------------------------------------
 
-import fs from 'fs'
-import path from 'path'
+var fs = require('fs')
+var path = require('path')
 
 recursiveRead(path.resolve(__dirname, '..'))
 
 function recursiveRead(dir) {
-  fs.readdir(dir, (err, files) => {
+  fs.readdir(dir, function(err, files) {
     if (err) return console.log('error:', err)
     else if (!files) return
 
-    files.forEach(file => {
+    files.forEach(function(file) {
       if (file.match(/node_modules|\.git/)) return
 
       file = `${dir}/${file}`
 
-      fs.lstat(file, (err, stats) => {
+      fs.lstat(file, function(err, stats) {
         if (err) return console.log('error:', err)
 
         if (stats.isFile()) {
