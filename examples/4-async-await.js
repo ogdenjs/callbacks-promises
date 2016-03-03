@@ -2,6 +2,15 @@
 // say hello and follow up with async/await
 // -----------------------------------------------------------------------------
 
+(async function () {
+  let name = 'Jason'
+
+  await sayHello(name)
+  await followUp(name)
+
+  console.log('[ greeting to', name, 'was completed ]')
+})()
+
 function sayHello(name) {
   return new Promise((resolve, reject) => {
     console.log('Hello,', name)
@@ -15,12 +24,3 @@ function followUp(name) {
     setTimeout(() => resolve(name), 1000)
   })
 }
-
-(async function () {
-  let name = 'Jason'
-
-  await sayHello(name)
-  await followUp(name)
-
-  console.log('[ greeting to', name, 'was completed ]')
-})()
