@@ -1,4 +1,7 @@
-# Ogden.js Presentation 3/3/2016
+# Ogden.js Presentation
+###### 3/3/2016
+
+> [See the slides here](https://slides.com/jsonmaur/callbacks-promises)
 
 ## Get Started
 
