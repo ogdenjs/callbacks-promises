@@ -1,0 +1,23 @@
+{
+  "name": "callbacks-promises",
+  "version": "1.0.0",
+  "description": "example repo for presentation on 3/3/16",
+  "license": "MIT",
+  "scripts": {
+    "babel": "babel-node"
+  },
+  "dependencies": {
+    "fs-promise": "0.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.5.1",
+    "babel-preset-es2015": "6.5.0",
+    "babel-preset-stage-0": "6.5.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  }
+}
